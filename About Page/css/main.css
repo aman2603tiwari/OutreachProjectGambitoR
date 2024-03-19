@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Jost');
+
+body{
+	padding: 0;
+	margin: 0;
+	background:rgb(15, 15, 65);
+
+}
+html,h1,h2,h3,h4,h5,h6,a{
+	font-family:'Jost', sans-serif;
+}
+
+.navbar{
+	background:#F97300;
+}
+.nav-link , .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: #f97300;
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+
+.header{
+	position: relative;
+	background-image: url('../images/solar.jpg');
+
+	background-size: cover;
+	background-position: center;
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.79);
+}
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+	background-color: black;
+	
+}
+.description h1{
+	color:#F97300 ;
+}
+.description p{
+	color:#666;
+	font-size: 20px;
+	width: 70%;
+}
+.description button{
+	border:1px  solid #F97300;
+	background:#F97300;
+	color:#fff;
+}
+.about{
+
+	position: relative;
+}
+.about h1{
+	color:#F97300;
+	margin: 0.5em;
+}
+.about img{
+	height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
+	display: block;
+	color: #888;
+	position: absolute;
+	left: 115px;
+}
+.about .desc{
+	padding: 2em;
+	border-left:4px solid #10828C;
+}
+.about .desc h3{
+	color: #10828C;
+}
+.about .desc p{
+	line-height:2;
+	color:#888;
+}
+
+
+.Categories{
+	margin: 4em 0;
+    position: relative;	
+}
+.Categories h1{
+	color:#F97300;
+	margin: 0.5em;	
+}
+.Categories img{
+	 height: 15rem;
+	 width: 100%;
+	 margin: 1em;
+}
+
+.img-fluid-1{
+	animation: moving-1 8s ease-in 1  ;
+}
+.img-fluid-2{
+	animation: moving-2 8s ease-in 1  ;
+}
+.description{
+	animation: jump 5s 1s ease-in-out;
+
+}
+
+@keyframes moving-1 {
+    from{transform: translate(-100%);}
+    to{transform: translate(0%);}
+}
+@keyframes moving-2 {
+    from{transform: translate(100%);}
+    to{transform: translate(0%);}
+}
+
+@keyframes jump {
+    0%{top: -1000000%;}
+    10%{top: 0%;}
+    20%{top: 30%;}
+    30%{top: 0%;}
+    40%{top: 20%;}
+    50%{top: 0%;}
+    60%{top: 10%;}
+    70%{top: 0%;}
+    80%{top: 5%;}
+    90%{top: 0%;}
+    100%{top: 2%;}
+}
